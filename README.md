@@ -3,8 +3,3 @@
 #Regiser and Login options for users
 #User information is stored in xml
 #Slack+GitHub Integration enabled
-
-
-a Small change
-Hello world
-Why is this not working ?
