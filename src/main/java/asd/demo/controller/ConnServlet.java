@@ -21,8 +21,8 @@ public class ConnServlet extends HttpServlet {
     @Override 
     protected void doPost(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
-        String adminemail = request.getParameter("adminemail");
-        String adminpass = request.getParameter("adminpassword");
+        String adminemail = request.getParameter("adminemail1");
+        String adminpass = request.getParameter("Admin1234");
         connector = new MongoDBConnector(adminemail, adminpass);        
         response.setContentType("text/html;charset=UTF-8");  
         HttpSession session = request.getSession();              
