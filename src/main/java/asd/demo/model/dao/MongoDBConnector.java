@@ -84,7 +84,8 @@ public class MongoDBConnector {
     }
 
     public User user(String email, String password) {
-        MongoClientURI uri = new MongoClientURI("mongodb://" + this.owner + ":" + this.password + "@ds029496.mlab.com:29496/heroku_59pxdn6j");
+        // mongodb://<dbuser>:<dbpassword>@ds137101.mlab.com:37101/heroku_q26jljbs
+        MongoClientURI uri = new MongoClientURI("mongodb://" + this.owner + ":" + this.password + "@ds137101.mlab.com:37101/heroku_q26jljbs");
         User user;
         try (MongoClient client = new MongoClient(uri)) {
             MongoDatabase db = client.getDatabase(uri.getDatabase());
